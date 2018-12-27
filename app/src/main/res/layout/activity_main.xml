@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent"
+
+        android:gravity="center"
+
+        android:orientation="vertical"
+
+        android:padding="10dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:orientation="vertical"
+
+            android:paddingLeft="20dp"
+
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/input_phone_layout"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp">
+
+                <EditText
+
+                    android:id="@+id/input_phone"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Phone number"
+
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/input_number_messages_layout"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+
+                    android:id="@+id/input_number_messages"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+                    android:hint="Number of messages to send"
+
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/text_to_send_layout"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="10dp">
+
+                <EditText
+
+                    android:id="@+id/text_to_send"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+
+
+                    android:hint="Text message" />
+
+                <Button
+                    android:id="@+id/btn_reset_phrase"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue"
+                    android:text="GENERATE PHRASE">
+
+                </Button>
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:paddingTop="20dp">
+
+                <TextView
+
+                    android:id="@+id/anonymous_textview"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="5"
+
+                    android:fontFeatureSettings="4"
+
+                    android:paddingRight="15dp"
+
+                    android:text="Rerandom each message phrase"
+
+                    android:textSize="12dp" />
+
+                <RadioGroup
+
+                    android:id="@+id/radioGroup_anonymous"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_toRightOf="@+id/anonymous_textview"
+
+                    android:orientation="horizontal"
+
+                    >
+
+                    <RadioButton
+
+                        android:id="@+id/no_anonymous_button"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:checked="true"
+
+                        android:text="no"
+
+                        />
+
+                    <RadioButton
+
+                        android:id="@+id/yes_anonymous_button"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:text="yes"
+
+
+                        />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_send_message"
+
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="40dp"
+
+                android:background="@color/darkred"
+
+                android:text="SEND"
+
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
